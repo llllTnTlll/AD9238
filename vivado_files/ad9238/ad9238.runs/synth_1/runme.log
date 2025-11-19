@@ -1,0 +1,389 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Nov  4 16:43:42 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 480.051 ; gain = 206.309
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Work/2025.1/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21428
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1266.898 ; gain = 494.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/Work/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [E:/Work/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_adc12_to_16_0_2' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_adc12_to_16_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_adc12_to_16_0_2' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_adc12_to_16_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_1' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:503]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1266]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'design_1_axi_mem_intercon_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1522]
+WARNING: [Synth 8-7071] port 'm_axi_wuser' of module 'design_1_axi_mem_intercon_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1522]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'design_1_axi_mem_intercon_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1522]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_axi_mem_intercon_imp_auto_pc_0' has 87 connections declared, but only 84 given [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1522]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1266]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_3HM21E' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1609]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_ds_0' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_ds_0' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_axi_mem_intercon_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1902]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_axi_mem_intercon_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1902]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_axi_mem_intercon_imp_auto_pc_1' has 56 connections declared, but only 54 given [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1902]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_3HM21E' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1609]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1959]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1959]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_aruser' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1189]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_awuser' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1202]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_wuser' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:1220]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_1' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:503]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_1' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_clk_wiz_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_1' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_clk_wiz_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fifo_16_64_fwft_0_1' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_fifo_16_64_fwft_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fifo_16_64_fwft_0_1' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_fifo_16_64_fwft_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'fifo_full' of module 'design_1_fifo_16_64_fwft_0_1' is unconnected for instance 'fifo_16_64_fwft_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+WARNING: [Synth 8-7071] port 'fifo_almost_full' of module 'design_1_fifo_16_64_fwft_0_1' is unconnected for instance 'fifo_16_64_fwft_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+WARNING: [Synth 8-7071] port 'fifo_empty' of module 'design_1_fifo_16_64_fwft_0_1' is unconnected for instance 'fifo_16_64_fwft_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'design_1_fifo_16_64_fwft_0_1' is unconnected for instance 'fifo_16_64_fwft_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'design_1_fifo_16_64_fwft_0_1' is unconnected for instance 'fifo_16_64_fwft_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+WARNING: [Synth 8-7023] instance 'fifo_16_64_fwft_0' of module 'design_1_fifo_16_64_fwft_0_1' has 14 connections declared, but only 9 given [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fifo_ddr_bridge_0_3' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_fifo_ddr_bridge_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fifo_ddr_bridge_0_3' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_fifo_ddr_bridge_0_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm00_axi_error' of module 'design_1_fifo_ddr_bridge_0_3' is unconnected for instance 'fifo_ddr_bridge_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:369]
+WARNING: [Synth 8-7023] instance 'fifo_ddr_bridge_0' of module 'design_1_fifo_ddr_bridge_0_3' has 49 connections declared, but only 48 given [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:369]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:418]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_2' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_ila_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_2' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_ila_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_key_debouncer_0_0' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_key_debouncer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_key_debouncer_0_0' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_key_debouncer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_processing_system7_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_1' is unconnected for instance 'processing_system7_0' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_1' has 68 connections declared, but only 64 given [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:429]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_1' [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_rst_ps7_0_50M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_1' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/.Xil/Vivado-26968-OMEN/realtime/design_1_rst_ps7_0_50M_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_1' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_1' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_1' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_1' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:494]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_1' has 10 connections declared, but only 6 given [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:494]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'adc12_to_16_0'. This will prevent further optimization [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:218]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:418]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_16_64_fwft_0'. This will prevent further optimization [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:359]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'design_1_i'. This will prevent further optimization [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:114]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'key_debouncer_0'. This will prevent further optimization [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:424]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_ddr_bridge_0'. This will prevent further optimization [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:369]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/synth/design_1.v:429]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_7HNO1D is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[5] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[4] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[3] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[2] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[1] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[5] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[4] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[3] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[2] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[1] in module m00_couplers_imp_1R706YB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1383.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3_in_context.xdc] for cell 'design_1_i/fifo_ddr_bridge_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3_in_context.xdc] for cell 'design_1_i/fifo_ddr_bridge_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_ds_0/design_1_axi_mem_intercon_imp_auto_ds_0/design_1_axi_mem_intercon_imp_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m01_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_ds_0/design_1_axi_mem_intercon_imp_auto_ds_0/design_1_axi_mem_intercon_imp_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m01_couplers/auto_ds'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m01_couplers/auto_pc'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_16_64_fwft_0_1/design_1_fifo_16_64_fwft_0_1/design_1_fifo_16_64_fwft_0_1_in_context.xdc] for cell 'design_1_i/fifo_16_64_fwft_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_16_64_fwft_0_1/design_1_fifo_16_64_fwft_0_1/design_1_fifo_16_64_fwft_0_1_in_context.xdc] for cell 'design_1_i/fifo_16_64_fwft_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_adc12_to_16_0_2/design_1_adc12_to_16_0_2/design_1_adc12_to_16_0_2_in_context.xdc] for cell 'design_1_i/adc12_to_16_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_adc12_to_16_0_2/design_1_adc12_to_16_0_2/design_1_adc12_to_16_0_2_in_context.xdc] for cell 'design_1_i/adc12_to_16_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2/design_1_ila_0_2_in_context.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2/design_1_ila_0_2_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_key_debouncer_0_0/design_1_key_debouncer_0_0/design_1_key_debouncer_0_0_in_context.xdc] for cell 'design_1_i/key_debouncer_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_key_debouncer_0_0/design_1_key_debouncer_0_0/design_1_key_debouncer_0_0_in_context.xdc] for cell 'design_1_i/key_debouncer_0'
+Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.srcs/constrs_1/new/design1_constraints.xdc]
+Finished Parsing XDC File [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.srcs/constrs_1/new/design1_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.srcs/constrs_1/new/design1_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1383.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1383.738 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1383.738 ; gain = 611.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[5] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[2] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[1] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[5] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[2] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[1] in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.023 ; gain = 621.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1568.406 ; gain = 796.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1569.680 ; gain = 797.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1580.359 ; gain = 808.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |design_1_adc12_to_16_0_2                |         1|
+|2     |design_1_axi_gpio_0_0                   |         1|
+|3     |design_1_axi_mem_intercon_imp_xbar_0    |         1|
+|4     |design_1_axi_mem_intercon_imp_auto_pc_0 |         1|
+|5     |design_1_axi_mem_intercon_imp_auto_ds_0 |         1|
+|6     |design_1_axi_mem_intercon_imp_auto_pc_1 |         1|
+|7     |design_1_clk_wiz_0_1                    |         1|
+|8     |design_1_fifo_16_64_fwft_0_1            |         1|
+|9     |design_1_fifo_ddr_bridge_0_3            |         1|
+|10    |design_1_ila_0_2                        |         1|
+|11    |design_1_key_debouncer_0_0              |         1|
+|12    |design_1_processing_system7_0_1         |         1|
+|13    |design_1_rst_ps7_0_50M_1                |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |design_1_adc12_to_16_0                |     1|
+|2     |design_1_axi_gpio_0                   |     1|
+|3     |design_1_axi_mem_intercon_imp_auto_ds |     1|
+|4     |design_1_axi_mem_intercon_imp_auto_pc |     2|
+|6     |design_1_axi_mem_intercon_imp_xbar    |     1|
+|7     |design_1_clk_wiz_0                    |     1|
+|8     |design_1_fifo_16_64_fwft_0            |     1|
+|9     |design_1_fifo_ddr_bridge_0            |     1|
+|10    |design_1_ila_0                        |     1|
+|11    |design_1_key_debouncer_0              |     1|
+|12    |design_1_processing_system7_0         |     1|
+|13    |design_1_rst_ps7_0_50M                |     1|
+|14    |IBUF                                  |    16|
+|15    |IOBUF                                 |     1|
+|16    |OBUF                                  |     3|
++------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1813.953 ; gain = 1041.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1813.953 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1823.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete | Checksum: 2fdf44a6
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1823.035 ; gain = 1277.812
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1823.035 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  4 16:44:29 2025...

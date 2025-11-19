@@ -1,0 +1,433 @@
+
+*** Running vivado
+    with args -log design_1_fifo_ddr_bridge_0_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fifo_ddr_bridge_0_3.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Oct 30 14:53:33 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_fifo_ddr_bridge_0_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Work/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_fifo_ddr_bridge_0_3 -part xc7z020clg484-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32136
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1219.648 ; gain = 493.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_fifo_ddr_bridge_0_3' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/synth/design_1_fifo_ddr_bridge_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ddr_bridge' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ddr_bridge_v1_0_M00_AXI' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:3]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ddr_bridge_v1_0_M00_AXI' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ddr_bridge' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fifo_ddr_bridge_0_3' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/synth/design_1_fifo_ddr_bridge_0_3.v:53]
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BUSER[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARREADY in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[63] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[62] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[61] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[60] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[59] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[58] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[57] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[56] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[55] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[54] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[53] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[52] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[51] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[50] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[49] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[48] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[47] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[46] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[45] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[44] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[43] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[42] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[41] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[40] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[39] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[38] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[37] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[36] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[35] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[34] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[33] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[32] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[31] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[30] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[29] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[28] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[27] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[26] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[25] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[24] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[23] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[22] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[21] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[20] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[19] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[18] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[17] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[16] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[15] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[14] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[13] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[12] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[11] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[10] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[9] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[8] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[7] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[6] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[5] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[4] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[3] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[2] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[1] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RRESP[1] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RRESP[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RLAST in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RVALID in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.520 ; gain = 604.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.520 ; gain = 604.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.520 ; gain = 604.293
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1330.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1408.523 ; gain = 1.895
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlen[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awsize[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_awuser[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[7] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[6] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wlast driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_wuser[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_bready driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arid[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_araddr[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlen[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arsize[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arsize[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arsize[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arburst[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arburst[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arlock driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arcache[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arcache[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arcache[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arcache[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arprot[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arqos[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arqos[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arqos[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arqos[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_aruser[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_arvalid driven by constant 0
+INFO: [Synth 8-3917] design design_1_fifo_ddr_bridge_0_3 has port m00_axi_rready driven by constant 0
+WARNING: [Synth 8-7129] Port m00_axi_bid[0] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_bresp[0] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_buser[0] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_arready in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rid[0] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[63] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[62] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[61] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[60] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[59] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[58] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[57] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[56] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[55] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[54] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[53] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[52] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[51] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[50] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[49] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[48] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[47] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[46] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[45] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[44] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axi_rdata[43] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1408.523 ; gain = 682.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1533.816 ; gain = 807.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.039 ; gain = 807.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1553.129 ; gain = 826.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    11|
+|2     |LUT1   |     4|
+|3     |LUT2   |     3|
+|4     |LUT3   |     4|
+|5     |LUT4   |     2|
+|6     |LUT5   |     2|
+|7     |LUT6   |     7|
+|8     |FDRE   |   106|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 75 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1778.602 ; gain = 974.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1779.066 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1782.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 865333e3
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1782.738 ; gain = 1280.129
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1782.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fifo_ddr_bridge_0_3, cache-ID = b7c04f9b510aaf84
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1782.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_fifo_ddr_bridge_0_3_utilization_synth.rpt -pb design_1_fifo_ddr_bridge_0_3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 14:54:14 2025...

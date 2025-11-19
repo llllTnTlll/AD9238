@@ -1,0 +1,289 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Nov  3 15:47:21 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_key_debouncer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_key_debouncer_0_0 (xilinx.com:user:key_debouncer:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Oct 30 14:53:13 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_fifo_ddr_bridge_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_2_fifo_ddr_bridge_0_0 (xilinx.com:user:fifo_ddr_bridge:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Oct 30 14:53:12 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fifo_ddr_bridge_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_fifo_ddr_bridge_0_3 (xilinx.com:user:fifo_ddr_bridge:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Oct 30 14:30:12 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_fifo_ddr_bridge_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_fifo_ddr_bridge_0_0 (xilinx.com:user:fifo_ddr_bridge:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Oct 30 14:30:11 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fifo_ddr_bridge_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fifo_ddr_bridge_0_3 (xilinx.com:user:fifo_ddr_bridge:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Oct 22 13:02:07 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_fifo_16_64_fwft_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_fifo_16_64_fwft_0_0 (xilinx.com:user:fifo_16_64_fwft:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Oct 22 13:02:05 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fifo_16_64_fwft_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fifo_16_64_fwft_0_1 (xilinx.com:user:fifo_16_64_fwft:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 20 15:06:14 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_adc12_to_16_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_adc12_to_16_0_0 (xilinx.com:user:adc12_to_16:1.0) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 20 15:06:12 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_adc12_to_16_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_adc12_to_16_0_1 (xilinx.com:user:adc12_to_16:1.0) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 20 14:39:54 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_axi_null_slave_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_axi_null_slave_0_0 (xilinx.com:user:axi_null_slave:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Oct 17 15:41:28 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_fifo_16_64_fwft_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_fifo_16_64_fwft_0_0 (xilinx.com:user:fifo_16_64_fwft:1.0) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Oct 17 15:41:27 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fifo_16_64_fwft_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fifo_16_64_fwft_0_0 (xilinx.com:user:fifo_16_64_fwft:1.0) from (Rev. 5) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Oct 17 13:40:52 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fifo_16_64_fwft_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_fifo_16_64_fwft_0_0 (xilinx.com:user:fifo_16_64_fwft:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Oct 15 17:22:41 2025
+| Host         : OMEN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_fifo_16_64_fwft_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_fifo_16_64_fwft_0_1 (xilinx.com:user:fifo_16_64_fwft:1.0 (Rev. 2)) to current project options.
+

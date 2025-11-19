@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xlconstant_v1_1_10  --include "E:/Work/2025.1/Vivado/data/rsb/busdef" --include "../../../../ad9238.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../ad9238.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ad9238.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "E:/Work/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../ad9238.srcs/sources_1/bd/design_2/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v" \
+
+verilog xil_defaultlib  --include "E:/Work/2025.1/Vivado/data/rsb/busdef" --include "../../../../ad9238.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../ad9238.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../ad9238.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "E:/Work/2025.1/Vivado/data/xilinx_vip/include" \
+"../../../../ad9238.ip_user_files/bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ip/design_2_fifo_16_64_fwft_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/e964/src/fifo_reader.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/e964/src/fifo_writer.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/e964/src/fifo_16_64_fwft.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ip/design_2_fifo_16_64_fwft_0_0/sim/design_2_fifo_16_64_fwft_0_0.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/3362/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/3362/hdl/fifo_ddr_bridge.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ip/design_2_fifo_ddr_bridge_0_0/sim/design_2_fifo_ddr_bridge_0_0.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/f1cb/src/adc_decode.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ip/design_2_adc12_to_16_0_0/sim/design_2_adc12_to_16_0_0.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ipshared/40e4/src/axi_slave_blackhole.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/ip/design_2_axi_null_slave_0_0/sim/design_2_axi_null_slave_0_0.v" \
+"../../../../ad9238.ip_user_files/bd/design_2/sim/design_2.v" \
+"../../../../ad9238.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v" \
+"../../../../ad9238.srcs/sim_1/new/tb1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

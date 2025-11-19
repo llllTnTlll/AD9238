@@ -1,0 +1,37 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Work/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_10 -L fifo_generator_v13_2_13 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_design_2_wrapper_behav xil_defaultlib.tb_design_2_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_null_slave
+Compiling module xil_defaultlib.design_2_axi_null_slave_0_0
+Compiling module xil_defaultlib.adc12_to_16
+Compiling module xil_defaultlib.design_2_adc12_to_16_0_0
+Compiling module xil_defaultlib.fifo_writer
+Compiling module xil_defaultlib.fifo_reader
+Compiling module fifo_generator_v13_2_13.fifo_generator_v13_2_13_sync_sta...
+Compiling module fifo_generator_v13_2_13.fifo_generator_v13_2_13_sync_sta...
+Compiling module fifo_generator_v13_2_13.fifo_generator_v13_2_13_bhv_ver_...
+Compiling module fifo_generator_v13_2_13.fifo_generator_v13_2_13_bhv_ver_...
+Compiling module fifo_generator_v13_2_13.fifo_generator_v13_2_13_CONV_VER...
+Compiling module fifo_generator_v13_2_13.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling module xil_defaultlib.fifo_16_64_fwft
+Compiling module xil_defaultlib.design_2_fifo_16_64_fwft_0_0
+Compiling module xil_defaultlib.fifo_ddr_bridge_v1_0_M00_AXI(C_M...
+Compiling module xil_defaultlib.fifo_ddr_bridge(C_M00_AXI_AWUSER...
+Compiling module xil_defaultlib.design_2_fifo_ddr_bridge_0_0
+Compiling module xil_defaultlib.hier_0_imp_1JISFQJ
+Compiling module xlconstant_v1_1_10.xlconstant_v1_1_10_xlconstant(CO...
+Compiling module xil_defaultlib.design_2_xlconstant_0_0
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.design_2_wrapper
+Compiling module xil_defaultlib.tb_design_2_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_design_2_wrapper_behav

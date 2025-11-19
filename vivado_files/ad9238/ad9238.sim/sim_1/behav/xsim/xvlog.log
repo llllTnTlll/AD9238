@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ip/design_2_xlconstant_0_0/sim/design_2_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ip/design_2_fifo_16_64_fwft_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/e964/src/fifo_reader.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_reader
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/e964/src/fifo_writer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_writer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/e964/src/fifo_16_64_fwft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_16_64_fwft
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ip/design_2_fifo_16_64_fwft_0_0/sim/design_2_fifo_16_64_fwft_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_fifo_16_64_fwft_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/3362/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_ddr_bridge_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/3362/hdl/fifo_ddr_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_ddr_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ip/design_2_fifo_ddr_bridge_0_0/sim/design_2_fifo_ddr_bridge_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_fifo_ddr_bridge_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/f1cb/src/adc_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc12_to_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ip/design_2_adc12_to_16_0_0/sim/design_2_adc12_to_16_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_adc12_to_16_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ipshared/40e4/src/axi_slave_blackhole.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_null_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/ip/design_2_axi_null_slave_0_0/sim/design_2_axi_null_slave_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_axi_null_slave_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.ip_user_files/bd/design_2/sim/design_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2
+INFO: [VRFC 10-311] analyzing module hier_0_imp_1JISFQJ
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.srcs/sim_1/new/tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_design_2_wrapper
