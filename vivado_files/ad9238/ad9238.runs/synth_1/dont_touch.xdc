@@ -12,6 +12,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pr
 # IP: bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_fifo_ddr_bridge_0_3 || ORIG_REF_NAME==design_1_fifo_ddr_bridge_0_3} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_xbar_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_xbar_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_1/design_1_axi_mem_intercon_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_1 || ORIG_REF_NAME==design_1_axi_mem_intercon_1} -quiet] -quiet
 
@@ -33,9 +36,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_il
 # IP: bd/design_1/ip/design_1_key_debouncer_0_0/design_1_key_debouncer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_key_debouncer_0_0 || ORIG_REF_NAME==design_1_key_debouncer_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_xbar_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_xbar_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] -quiet
 
@@ -48,4 +48,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_1 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_1} -quiet] -quiet
 
-# XDC: c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/design_1_ooc.xdc

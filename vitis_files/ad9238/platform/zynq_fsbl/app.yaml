@@ -1,4 +1,0 @@
-domain_path: C:\Users\liuzh\Desktop\high_speed_adc\vitis_prjs\ad9238\platform\zynq_fsbl\zynq_fsbl_bsp
-app_src_dir: E:\Work\2025.1\Vitis\data\embeddedsw\lib\sw_apps\zynq_fsbl
-template: zynq_fsbl
-lang: c

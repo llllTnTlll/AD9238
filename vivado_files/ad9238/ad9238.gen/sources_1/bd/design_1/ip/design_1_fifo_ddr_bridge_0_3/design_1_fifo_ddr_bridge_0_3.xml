@@ -759,7 +759,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66f966b3</spirit:value>
+            <spirit:value>9:7bd72d5a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -773,11 +773,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 30 05:54:14 UTC 2025</spirit:value>
+            <spirit:value>Wed Nov 26 01:52:19 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66f966b3</spirit:value>
+            <spirit:value>9:7bd72d5a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -788,7 +788,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66f966b3</spirit:value>
+            <spirit:value>9:7bd72d5a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -804,11 +804,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 30 05:53:27 UTC 2025</spirit:value>
+            <spirit:value>Wed Nov 26 01:39:52 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:421545de</spirit:value>
+            <spirit:value>9:cf558884</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -824,11 +824,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 30 05:53:27 UTC 2025</spirit:value>
+            <spirit:value>Wed Nov 26 01:51:42 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:421545de</spirit:value>
+            <spirit:value>9:cf558884</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -844,11 +844,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 30 05:53:27 UTC 2025</spirit:value>
+            <spirit:value>Wed Nov 26 01:39:52 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66f966b3</spirit:value>
+            <spirit:value>9:7bd72d5a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -864,11 +864,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Oct 30 05:53:27 UTC 2025</spirit:value>
+            <spirit:value>Wed Nov 26 01:51:42 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:66f966b3</spirit:value>
+            <spirit:value>9:7bd72d5a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1782,7 +1782,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_TOTAL_BURST</spirit:name>
         <spirit:displayName>C M Total Burst</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_TOTAL_BURST">100</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_TOTAL_BURST">5000</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -1858,11 +1858,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/597e/hdl/fifo_ddr_bridge.v</spirit:name>
+        <spirit:name>../../ipshared/4023/hdl/fifo_ddr_bridge.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1877,11 +1877,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/597e/hdl/fifo_ddr_bridge.v</spirit:name>
+        <spirit:name>../../ipshared/4023/hdl/fifo_ddr_bridge.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1977,13 +1977,13 @@
     <spirit:parameter>
       <spirit:name>C_M_TOTAL_BURST</spirit:name>
       <spirit:displayName>C M Total Burst</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_TOTAL_BURST">100</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_TOTAL_BURST">5000</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>fifo_ddr_bridge_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ARUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
@@ -2024,13 +2024,14 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI_CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI_CLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI_RST.POLARITY" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_M_TOTAL_BURST" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="372f74e8"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="61b3cd22"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e2e9d7a1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6217b43c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="514785d6"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="3d2c11c0"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="91d0054a"/>

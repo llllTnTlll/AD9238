@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-// Date        : Thu Oct 30 14:54:14 2025
+// Date        : Wed Nov 26 10:52:19 2025
 // Host        : OMEN running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3_sim_netlist.v
+//               c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/design_1_fifo_ddr_bridge_0_3_sim_netlist.v
 // Design      : design_1_fifo_ddr_bridge_0_3
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -72,7 +72,7 @@ module design_1_fifo_ddr_bridge_0_3
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 M00_AXI_RST RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input m00_axi_aresetn;
   output m00_axi_txn_done;
   output m00_axi_error;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWID" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, WIZ_DATA_WIDTH 32, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 1, RUSER_WIDTH 1, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN design_1_SYS_CLK_50M, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output [0:0]m00_axi_awid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWID" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, WIZ_DATA_WIDTH 32, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 1, RUSER_WIDTH 1, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN design_1_SYS_CLK_50M, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output [0:0]m00_axi_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWADDR" *) output [31:0]m00_axi_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWLEN" *) output [7:0]m00_axi_awlen;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWSIZE" *) output [2:0]m00_axi_awsize;
@@ -260,35 +260,35 @@ endmodule
 
 (* ORIG_REF_NAME = "fifo_ddr_bridge" *) 
 module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge
-   (m00_axi_wdata,
-    m00_axi_awaddr,
+   (m00_axi_awvalid,
     m00_axi_wvalid,
-    m00_axi_awvalid,
+    m00_axi_wdata,
+    m00_axi_awaddr,
     s_ready,
     m00_axi_error,
     m00_axi_txn_done,
+    s_valid,
+    m00_axi_aresetn,
+    m00_axi_awready,
+    m00_axi_wready,
+    m00_axi_bvalid,
     m00_axi_aclk,
     s_data,
-    m00_axi_bvalid,
-    m00_axi_aresetn,
-    s_valid,
-    m00_axi_wready,
-    m00_axi_awready,
     m00_axi_bresp);
+  output m00_axi_awvalid;
+  output m00_axi_wvalid;
   output [63:0]m00_axi_wdata;
   output [28:0]m00_axi_awaddr;
-  output m00_axi_wvalid;
-  output m00_axi_awvalid;
   output s_ready;
   output m00_axi_error;
   output m00_axi_txn_done;
+  input s_valid;
+  input m00_axi_aresetn;
+  input m00_axi_awready;
+  input m00_axi_wready;
+  input m00_axi_bvalid;
   input m00_axi_aclk;
   input [63:0]s_data;
-  input m00_axi_bvalid;
-  input m00_axi_aresetn;
-  input s_valid;
-  input m00_axi_wready;
-  input m00_axi_awready;
   input [0:0]m00_axi_bresp;
 
   wire m00_axi_aclk;
@@ -327,35 +327,35 @@ endmodule
 
 (* ORIG_REF_NAME = "fifo_ddr_bridge_v1_0_M00_AXI" *) 
 module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
-   (m00_axi_wdata,
-    m00_axi_awaddr,
+   (m00_axi_awvalid,
     m00_axi_wvalid,
-    m00_axi_awvalid,
+    m00_axi_wdata,
+    m00_axi_awaddr,
     s_ready,
     m00_axi_error,
     m00_axi_txn_done,
+    s_valid,
+    m00_axi_aresetn,
+    m00_axi_awready,
+    m00_axi_wready,
+    m00_axi_bvalid,
     m00_axi_aclk,
     s_data,
-    m00_axi_bvalid,
-    m00_axi_aresetn,
-    s_valid,
-    m00_axi_wready,
-    m00_axi_awready,
     m00_axi_bresp);
+  output m00_axi_awvalid;
+  output m00_axi_wvalid;
   output [63:0]m00_axi_wdata;
   output [28:0]m00_axi_awaddr;
-  output m00_axi_wvalid;
-  output m00_axi_awvalid;
   output s_ready;
   output m00_axi_error;
   output m00_axi_txn_done;
+  input s_valid;
+  input m00_axi_aresetn;
+  input m00_axi_awready;
+  input m00_axi_wready;
+  input m00_axi_bvalid;
   input m00_axi_aclk;
   input [63:0]s_data;
-  input m00_axi_bvalid;
-  input m00_axi_aresetn;
-  input s_valid;
-  input m00_axi_wready;
-  input m00_axi_awready;
   input [0:0]m00_axi_bresp;
 
   wire ERROR_i_1_n_0;
@@ -381,7 +381,6 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
   wire [63:0]m00_axi_wdata;
   wire m00_axi_wready;
   wire m00_axi_wvalid;
-  wire [6:0]p_0_in;
   wire r_awaddr_off0;
   wire \r_awaddr_off[6]_i_2_n_0 ;
   wire [31:23]r_awaddr_off_reg;
@@ -443,17 +442,69 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
   wire \r_awaddr_off_reg[6]_i_1_n_6 ;
   wire \r_awaddr_off_reg[6]_i_1_n_7 ;
   wire r_awvalid_i_1_n_0;
-  wire r_awvalid_i_2_n_0;
-  wire \r_done_cnt[6]_i_2_n_0 ;
-  wire [6:0]r_done_cnt_reg;
+  wire \r_done_cnt[0]_i_2_n_0 ;
+  wire [12:0]r_done_cnt_reg;
+  wire \r_done_cnt_reg[0]_i_1_n_0 ;
+  wire \r_done_cnt_reg[0]_i_1_n_1 ;
+  wire \r_done_cnt_reg[0]_i_1_n_2 ;
+  wire \r_done_cnt_reg[0]_i_1_n_3 ;
+  wire \r_done_cnt_reg[0]_i_1_n_4 ;
+  wire \r_done_cnt_reg[0]_i_1_n_5 ;
+  wire \r_done_cnt_reg[0]_i_1_n_6 ;
+  wire \r_done_cnt_reg[0]_i_1_n_7 ;
+  wire \r_done_cnt_reg[12]_i_1_n_7 ;
+  wire \r_done_cnt_reg[4]_i_1_n_0 ;
+  wire \r_done_cnt_reg[4]_i_1_n_1 ;
+  wire \r_done_cnt_reg[4]_i_1_n_2 ;
+  wire \r_done_cnt_reg[4]_i_1_n_3 ;
+  wire \r_done_cnt_reg[4]_i_1_n_4 ;
+  wire \r_done_cnt_reg[4]_i_1_n_5 ;
+  wire \r_done_cnt_reg[4]_i_1_n_6 ;
+  wire \r_done_cnt_reg[4]_i_1_n_7 ;
+  wire \r_done_cnt_reg[8]_i_1_n_0 ;
+  wire \r_done_cnt_reg[8]_i_1_n_1 ;
+  wire \r_done_cnt_reg[8]_i_1_n_2 ;
+  wire \r_done_cnt_reg[8]_i_1_n_3 ;
+  wire \r_done_cnt_reg[8]_i_1_n_4 ;
+  wire \r_done_cnt_reg[8]_i_1_n_5 ;
+  wire \r_done_cnt_reg[8]_i_1_n_6 ;
+  wire \r_done_cnt_reg[8]_i_1_n_7 ;
   wire r_inflight;
   wire r_inflight_i_1_n_0;
   wire r_txn_done;
   wire r_txn_done0;
   wire r_txn_done_i_2_n_0;
+  wire r_txn_done_i_4_n_0;
+  wire r_txn_done_reg_i_3_n_0;
+  wire r_txn_done_reg_i_3_n_1;
+  wire r_txn_done_reg_i_3_n_2;
+  wire r_txn_done_reg_i_3_n_3;
+  wire r_txn_done_reg_i_3_n_4;
+  wire r_txn_done_reg_i_3_n_5;
+  wire r_txn_done_reg_i_3_n_6;
+  wire r_txn_done_reg_i_3_n_7;
+  wire r_txn_done_reg_i_5_n_0;
+  wire r_txn_done_reg_i_5_n_1;
+  wire r_txn_done_reg_i_5_n_2;
+  wire r_txn_done_reg_i_5_n_3;
+  wire r_txn_done_reg_i_5_n_4;
+  wire r_txn_done_reg_i_5_n_5;
+  wire r_txn_done_reg_i_5_n_6;
+  wire r_txn_done_reg_i_5_n_7;
+  wire r_txn_done_reg_i_6_n_3;
+  wire r_txn_done_reg_i_7_n_0;
+  wire r_txn_done_reg_i_7_n_1;
+  wire r_txn_done_reg_i_7_n_2;
+  wire r_txn_done_reg_i_7_n_3;
+  wire r_txn_done_reg_i_7_n_4;
+  wire r_txn_done_reg_i_7_n_5;
+  wire r_txn_done_reg_i_7_n_6;
+  wire r_txn_done_reg_i_7_n_7;
   wire r_wvalid_i_1_n_0;
   wire [63:0]s_data;
   wire s_ready;
+  wire s_ready_INST_0_i_1_n_0;
+  wire s_ready_INST_0_i_2_n_0;
   wire s_valid;
   wire take_sample;
   wire w_sys_rst;
@@ -461,6 +512,10 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
   wire [3:1]NLW_M_AXI_AWADDR_carry__1_O_UNCONNECTED;
   wire [3:0]\NLW_r_awaddr_off_reg[31]_i_1_CO_UNCONNECTED ;
   wire [3:1]\NLW_r_awaddr_off_reg[31]_i_1_O_UNCONNECTED ;
+  wire [3:0]\NLW_r_done_cnt_reg[12]_i_1_CO_UNCONNECTED ;
+  wire [3:1]\NLW_r_done_cnt_reg[12]_i_1_O_UNCONNECTED ;
+  wire [3:1]NLW_r_txn_done_reg_i_6_CO_UNCONNECTED;
+  wire [3:0]NLW_r_txn_done_reg_i_6_O_UNCONNECTED;
 
   LUT3 #(
     .INIT(8'hF8)) 
@@ -521,15 +576,11 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
         .D(TXN_DONE_i_2_n_0),
         .Q(m00_axi_txn_done),
         .R(w_sys_rst));
-  LUT6 #(
-    .INIT(64'h5557FFFF00000000)) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \r_awaddr_off[22]_i_1 
-       (.I0(r_done_cnt_reg[5]),
-        .I1(r_done_cnt_reg[2]),
-        .I2(r_done_cnt_reg[3]),
-        .I3(r_done_cnt_reg[4]),
-        .I4(r_done_cnt_reg[6]),
-        .I5(m00_axi_bvalid),
+       (.I0(s_ready_INST_0_i_1_n_0),
+        .I1(m00_axi_bvalid),
         .O(r_awaddr_off0));
   LUT1 #(
     .INIT(2'h1)) 
@@ -775,24 +826,15 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
         .Q(m00_axi_awaddr[6]),
         .R(w_sys_rst));
   LUT6 #(
-    .INIT(64'h0000AAAA00800080)) 
+    .INIT(64'h0000FF0040004000)) 
     r_awvalid_i_1
-       (.I0(m00_axi_aresetn),
-        .I1(r_awvalid_i_2_n_0),
-        .I2(s_valid),
-        .I3(r_inflight),
+       (.I0(r_inflight),
+        .I1(s_valid),
+        .I2(s_ready_INST_0_i_1_n_0),
+        .I3(m00_axi_aresetn),
         .I4(m00_axi_awready),
         .I5(m00_axi_awvalid),
         .O(r_awvalid_i_1_n_0));
-  LUT5 #(
-    .INIT(32'h5557FFFF)) 
-    r_awvalid_i_2
-       (.I0(r_done_cnt_reg[6]),
-        .I1(r_done_cnt_reg[4]),
-        .I2(r_done_cnt_reg[3]),
-        .I3(r_done_cnt_reg[2]),
-        .I4(r_done_cnt_reg[5]),
-        .O(r_awvalid_i_2_n_0));
   FDRE r_awvalid_reg
        (.C(m00_axi_aclk),
         .CE(1'b1),
@@ -801,118 +843,126 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
         .R(1'b0));
   LUT1 #(
     .INIT(2'h1)) 
-    \r_done_cnt[0]_i_1 
+    \r_done_cnt[0]_i_2 
        (.I0(r_done_cnt_reg[0]),
-        .O(p_0_in[0]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT2 #(
-    .INIT(4'h6)) 
-    \r_done_cnt[1]_i_1 
-       (.I0(r_done_cnt_reg[0]),
-        .I1(r_done_cnt_reg[1]),
-        .O(p_0_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT3 #(
-    .INIT(8'h78)) 
-    \r_done_cnt[2]_i_1 
-       (.I0(r_done_cnt_reg[1]),
-        .I1(r_done_cnt_reg[0]),
-        .I2(r_done_cnt_reg[2]),
-        .O(p_0_in[2]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h7F80)) 
-    \r_done_cnt[3]_i_1 
-       (.I0(r_done_cnt_reg[2]),
-        .I1(r_done_cnt_reg[0]),
-        .I2(r_done_cnt_reg[1]),
-        .I3(r_done_cnt_reg[3]),
-        .O(p_0_in[3]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'h7FFF8000)) 
-    \r_done_cnt[4]_i_1 
-       (.I0(r_done_cnt_reg[3]),
-        .I1(r_done_cnt_reg[1]),
-        .I2(r_done_cnt_reg[0]),
-        .I3(r_done_cnt_reg[2]),
-        .I4(r_done_cnt_reg[4]),
-        .O(p_0_in[4]));
-  LUT6 #(
-    .INIT(64'h7FFFFFFF80000000)) 
-    \r_done_cnt[5]_i_1 
-       (.I0(r_done_cnt_reg[4]),
-        .I1(r_done_cnt_reg[2]),
-        .I2(r_done_cnt_reg[0]),
-        .I3(r_done_cnt_reg[1]),
-        .I4(r_done_cnt_reg[3]),
-        .I5(r_done_cnt_reg[5]),
-        .O(p_0_in[5]));
-  LUT6 #(
-    .INIT(64'hF7FFFFFF08000000)) 
-    \r_done_cnt[6]_i_1 
-       (.I0(r_done_cnt_reg[5]),
-        .I1(r_done_cnt_reg[3]),
-        .I2(\r_done_cnt[6]_i_2_n_0 ),
-        .I3(r_done_cnt_reg[2]),
-        .I4(r_done_cnt_reg[4]),
-        .I5(r_done_cnt_reg[6]),
-        .O(p_0_in[6]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
-    \r_done_cnt[6]_i_2 
-       (.I0(r_done_cnt_reg[0]),
-        .I1(r_done_cnt_reg[1]),
-        .O(\r_done_cnt[6]_i_2_n_0 ));
+        .O(\r_done_cnt[0]_i_2_n_0 ));
   FDRE \r_done_cnt_reg[0] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[0]),
+        .D(\r_done_cnt_reg[0]_i_1_n_7 ),
         .Q(r_done_cnt_reg[0]),
         .R(w_sys_rst));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \r_done_cnt_reg[0]_i_1 
+       (.CI(1'b0),
+        .CO({\r_done_cnt_reg[0]_i_1_n_0 ,\r_done_cnt_reg[0]_i_1_n_1 ,\r_done_cnt_reg[0]_i_1_n_2 ,\r_done_cnt_reg[0]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b1}),
+        .O({\r_done_cnt_reg[0]_i_1_n_4 ,\r_done_cnt_reg[0]_i_1_n_5 ,\r_done_cnt_reg[0]_i_1_n_6 ,\r_done_cnt_reg[0]_i_1_n_7 }),
+        .S({r_done_cnt_reg[3:1],\r_done_cnt[0]_i_2_n_0 }));
+  FDRE \r_done_cnt_reg[10] 
+       (.C(m00_axi_aclk),
+        .CE(r_awaddr_off0),
+        .D(\r_done_cnt_reg[8]_i_1_n_5 ),
+        .Q(r_done_cnt_reg[10]),
+        .R(w_sys_rst));
+  FDRE \r_done_cnt_reg[11] 
+       (.C(m00_axi_aclk),
+        .CE(r_awaddr_off0),
+        .D(\r_done_cnt_reg[8]_i_1_n_4 ),
+        .Q(r_done_cnt_reg[11]),
+        .R(w_sys_rst));
+  FDRE \r_done_cnt_reg[12] 
+       (.C(m00_axi_aclk),
+        .CE(r_awaddr_off0),
+        .D(\r_done_cnt_reg[12]_i_1_n_7 ),
+        .Q(r_done_cnt_reg[12]),
+        .R(w_sys_rst));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \r_done_cnt_reg[12]_i_1 
+       (.CI(\r_done_cnt_reg[8]_i_1_n_0 ),
+        .CO(\NLW_r_done_cnt_reg[12]_i_1_CO_UNCONNECTED [3:0]),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_r_done_cnt_reg[12]_i_1_O_UNCONNECTED [3:1],\r_done_cnt_reg[12]_i_1_n_7 }),
+        .S({1'b0,1'b0,1'b0,r_done_cnt_reg[12]}));
   FDRE \r_done_cnt_reg[1] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[1]),
+        .D(\r_done_cnt_reg[0]_i_1_n_6 ),
         .Q(r_done_cnt_reg[1]),
         .R(w_sys_rst));
   FDRE \r_done_cnt_reg[2] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[2]),
+        .D(\r_done_cnt_reg[0]_i_1_n_5 ),
         .Q(r_done_cnt_reg[2]),
         .R(w_sys_rst));
   FDRE \r_done_cnt_reg[3] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[3]),
+        .D(\r_done_cnt_reg[0]_i_1_n_4 ),
         .Q(r_done_cnt_reg[3]),
         .R(w_sys_rst));
   FDRE \r_done_cnt_reg[4] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[4]),
+        .D(\r_done_cnt_reg[4]_i_1_n_7 ),
         .Q(r_done_cnt_reg[4]),
         .R(w_sys_rst));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \r_done_cnt_reg[4]_i_1 
+       (.CI(\r_done_cnt_reg[0]_i_1_n_0 ),
+        .CO({\r_done_cnt_reg[4]_i_1_n_0 ,\r_done_cnt_reg[4]_i_1_n_1 ,\r_done_cnt_reg[4]_i_1_n_2 ,\r_done_cnt_reg[4]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\r_done_cnt_reg[4]_i_1_n_4 ,\r_done_cnt_reg[4]_i_1_n_5 ,\r_done_cnt_reg[4]_i_1_n_6 ,\r_done_cnt_reg[4]_i_1_n_7 }),
+        .S(r_done_cnt_reg[7:4]));
   FDRE \r_done_cnt_reg[5] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[5]),
+        .D(\r_done_cnt_reg[4]_i_1_n_6 ),
         .Q(r_done_cnt_reg[5]),
         .R(w_sys_rst));
   FDRE \r_done_cnt_reg[6] 
        (.C(m00_axi_aclk),
         .CE(r_awaddr_off0),
-        .D(p_0_in[6]),
+        .D(\r_done_cnt_reg[4]_i_1_n_5 ),
         .Q(r_done_cnt_reg[6]),
         .R(w_sys_rst));
+  FDRE \r_done_cnt_reg[7] 
+       (.C(m00_axi_aclk),
+        .CE(r_awaddr_off0),
+        .D(\r_done_cnt_reg[4]_i_1_n_4 ),
+        .Q(r_done_cnt_reg[7]),
+        .R(w_sys_rst));
+  FDRE \r_done_cnt_reg[8] 
+       (.C(m00_axi_aclk),
+        .CE(r_awaddr_off0),
+        .D(\r_done_cnt_reg[8]_i_1_n_7 ),
+        .Q(r_done_cnt_reg[8]),
+        .R(w_sys_rst));
+  (* ADDER_THRESHOLD = "11" *) 
+  CARRY4 \r_done_cnt_reg[8]_i_1 
+       (.CI(\r_done_cnt_reg[4]_i_1_n_0 ),
+        .CO({\r_done_cnt_reg[8]_i_1_n_0 ,\r_done_cnt_reg[8]_i_1_n_1 ,\r_done_cnt_reg[8]_i_1_n_2 ,\r_done_cnt_reg[8]_i_1_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\r_done_cnt_reg[8]_i_1_n_4 ,\r_done_cnt_reg[8]_i_1_n_5 ,\r_done_cnt_reg[8]_i_1_n_6 ,\r_done_cnt_reg[8]_i_1_n_7 }),
+        .S(r_done_cnt_reg[11:8]));
+  FDRE \r_done_cnt_reg[9] 
+       (.C(m00_axi_aclk),
+        .CE(r_awaddr_off0),
+        .D(\r_done_cnt_reg[8]_i_1_n_6 ),
+        .Q(r_done_cnt_reg[9]),
+        .R(w_sys_rst));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'h08F8)) 
+    .INIT(16'h40EA)) 
     r_inflight_i_1
-       (.I0(r_awvalid_i_2_n_0),
+       (.I0(r_inflight),
         .I1(s_valid),
-        .I2(r_inflight),
+        .I2(s_ready_INST_0_i_1_n_0),
         .I3(m00_axi_bvalid),
         .O(r_inflight_i_1_n_0));
   FDRE r_inflight_reg
@@ -921,36 +971,75 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
         .D(r_inflight_i_1_n_0),
         .Q(r_inflight),
         .R(w_sys_rst));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT5 #(
+    .INIT(32'h00200000)) 
     r_txn_done_i_1
        (.I0(r_txn_done_i_2_n_0),
-        .I1(r_done_cnt_reg[1]),
-        .I2(r_done_cnt_reg[0]),
+        .I1(r_txn_done_reg_i_3_n_6),
+        .I2(r_txn_done_reg_i_3_n_5),
+        .I3(r_txn_done_reg_i_3_n_7),
+        .I4(r_txn_done_i_4_n_0),
         .O(r_txn_done0));
   LUT6 #(
     .INIT(64'h0002000000000000)) 
     r_txn_done_i_2
-       (.I0(r_done_cnt_reg[5]),
-        .I1(r_done_cnt_reg[4]),
-        .I2(r_done_cnt_reg[2]),
-        .I3(r_done_cnt_reg[3]),
+       (.I0(r_txn_done_reg_i_5_n_4),
+        .I1(r_txn_done_reg_i_6_n_3),
+        .I2(r_txn_done_reg_i_5_n_6),
+        .I3(r_txn_done_reg_i_5_n_5),
         .I4(m00_axi_bvalid),
-        .I5(r_done_cnt_reg[6]),
+        .I5(r_done_cnt_reg[0]),
         .O(r_txn_done_i_2_n_0));
+  LUT6 #(
+    .INIT(64'h0002000000000000)) 
+    r_txn_done_i_4
+       (.I0(r_txn_done_reg_i_7_n_5),
+        .I1(r_txn_done_reg_i_7_n_6),
+        .I2(r_txn_done_reg_i_3_n_4),
+        .I3(r_txn_done_reg_i_7_n_7),
+        .I4(r_txn_done_reg_i_5_n_7),
+        .I5(r_txn_done_reg_i_7_n_4),
+        .O(r_txn_done_i_4_n_0));
   FDRE r_txn_done_reg
        (.C(m00_axi_aclk),
         .CE(1'b1),
         .D(r_txn_done0),
         .Q(r_txn_done),
         .R(w_sys_rst));
+  CARRY4 r_txn_done_reg_i_3
+       (.CI(1'b0),
+        .CO({r_txn_done_reg_i_3_n_0,r_txn_done_reg_i_3_n_1,r_txn_done_reg_i_3_n_2,r_txn_done_reg_i_3_n_3}),
+        .CYINIT(r_done_cnt_reg[0]),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({r_txn_done_reg_i_3_n_4,r_txn_done_reg_i_3_n_5,r_txn_done_reg_i_3_n_6,r_txn_done_reg_i_3_n_7}),
+        .S(r_done_cnt_reg[4:1]));
+  CARRY4 r_txn_done_reg_i_5
+       (.CI(r_txn_done_reg_i_7_n_0),
+        .CO({r_txn_done_reg_i_5_n_0,r_txn_done_reg_i_5_n_1,r_txn_done_reg_i_5_n_2,r_txn_done_reg_i_5_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({r_txn_done_reg_i_5_n_4,r_txn_done_reg_i_5_n_5,r_txn_done_reg_i_5_n_6,r_txn_done_reg_i_5_n_7}),
+        .S(r_done_cnt_reg[12:9]));
+  CARRY4 r_txn_done_reg_i_6
+       (.CI(r_txn_done_reg_i_5_n_0),
+        .CO({NLW_r_txn_done_reg_i_6_CO_UNCONNECTED[3:1],r_txn_done_reg_i_6_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_r_txn_done_reg_i_6_O_UNCONNECTED[3:0]),
+        .S({1'b0,1'b0,1'b0,1'b1}));
+  CARRY4 r_txn_done_reg_i_7
+       (.CI(r_txn_done_reg_i_3_n_0),
+        .CO({r_txn_done_reg_i_7_n_0,r_txn_done_reg_i_7_n_1,r_txn_done_reg_i_7_n_2,r_txn_done_reg_i_7_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({r_txn_done_reg_i_7_n_4,r_txn_done_reg_i_7_n_5,r_txn_done_reg_i_7_n_6,r_txn_done_reg_i_7_n_7}),
+        .S(r_done_cnt_reg[8:5]));
   LUT3 #(
     .INIT(8'h40)) 
     \r_wdata[63]_i_1 
        (.I0(r_inflight),
         .I1(s_valid),
-        .I2(r_awvalid_i_2_n_0),
+        .I2(s_ready_INST_0_i_1_n_0),
         .O(take_sample));
   FDRE \r_wdata_reg[0] 
        (.C(m00_axi_aclk),
@@ -1337,12 +1426,12 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
         .Q(m00_axi_wdata[9]),
         .R(w_sys_rst));
   LUT6 #(
-    .INIT(64'h0000AAAA00800080)) 
+    .INIT(64'h0000FF0040004000)) 
     r_wvalid_i_1
-       (.I0(m00_axi_aresetn),
-        .I1(r_awvalid_i_2_n_0),
-        .I2(s_valid),
-        .I3(r_inflight),
+       (.I0(r_inflight),
+        .I1(s_valid),
+        .I2(s_ready_INST_0_i_1_n_0),
+        .I3(m00_axi_aresetn),
         .I4(m00_axi_wready),
         .I5(m00_axi_wvalid),
         .O(r_wvalid_i_1_n_0));
@@ -1352,16 +1441,32 @@ module design_1_fifo_ddr_bridge_0_3_fifo_ddr_bridge_v1_0_M00_AXI
         .D(r_wvalid_i_1_n_0),
         .Q(m00_axi_wvalid),
         .R(1'b0));
-  LUT6 #(
-    .INIT(64'h000000005557FFFF)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
     s_ready_INST_0
+       (.I0(s_ready_INST_0_i_1_n_0),
+        .I1(r_inflight),
+        .O(s_ready));
+  LUT6 #(
+    .INIT(64'h000000F7FFFFFFFF)) 
+    s_ready_INST_0_i_1
+       (.I0(r_done_cnt_reg[8]),
+        .I1(r_done_cnt_reg[7]),
+        .I2(s_ready_INST_0_i_2_n_0),
+        .I3(r_done_cnt_reg[10]),
+        .I4(r_done_cnt_reg[11]),
+        .I5(r_done_cnt_reg[12]),
+        .O(s_ready_INST_0_i_1_n_0));
+  LUT5 #(
+    .INIT(32'h0001FFFF)) 
+    s_ready_INST_0_i_2
        (.I0(r_done_cnt_reg[5]),
-        .I1(r_done_cnt_reg[2]),
+        .I1(r_done_cnt_reg[6]),
         .I2(r_done_cnt_reg[3]),
         .I3(r_done_cnt_reg[4]),
-        .I4(r_done_cnt_reg[6]),
-        .I5(r_inflight),
-        .O(s_ready));
+        .I4(r_done_cnt_reg[9]),
+        .O(s_ready_INST_0_i_2_n_0));
 endmodule
 `ifndef GLBL
 `define GLBL

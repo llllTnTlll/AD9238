@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/impl_1'
+HD_PWD='C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

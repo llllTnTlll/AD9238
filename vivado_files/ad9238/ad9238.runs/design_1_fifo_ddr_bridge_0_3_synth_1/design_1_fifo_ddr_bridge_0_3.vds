@@ -3,12 +3,12 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Oct 30 14:53:33 2025
-# Process ID         : 22072
-# Current directory  : C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1
+# Start of session at: Wed Nov 26 10:51:48 2025
+# Process ID         : 29244
+# Current directory  : C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1
 # Command line       : vivado.exe -log design_1_fifo_ddr_bridge_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fifo_ddr_bridge_0_3.tcl
-# Log file           : C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.vds
-# Journal file       : C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1\vivado.jou
+# Log file           : C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.vds
+# Journal file       : C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1\vivado.jou
 # Running On         : OMEN
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
@@ -17,9 +17,9 @@
 # CPU Physical cores : 16
 # CPU Logical cores  : 24
 # Host memory        : 16831 MB
-# Swap memory        : 18253 MB
-# Total Virtual      : 35084 MB
-# Available Virtual  : 12424 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 36158 MB
+# Available Virtual  : 19467 MB
 #-----------------------------------------------------------
 source design_1_fifo_ddr_bridge_0_3.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -32,19 +32,19 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32136
+INFO: [Synth 8-7075] Helper process launched with PID 8260
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1219.648 ; gain = 493.422
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1218.723 ; gain = 492.543
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_fifo_ddr_bridge_0_3' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/synth/design_1_fifo_ddr_bridge_0_3.v:53]
-INFO: [Synth 8-6157] synthesizing module 'fifo_ddr_bridge' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge.v:3]
-INFO: [Synth 8-6157] synthesizing module 'fifo_ddr_bridge_v1_0_M00_AXI' [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:3]
-WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
-WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
-WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_ddr_bridge_v1_0_M00_AXI' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_ddr_bridge' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/597e/hdl/fifo_ddr_bridge.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_fifo_ddr_bridge_0_3' (0#1) [c:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/synth/design_1_fifo_ddr_bridge_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fifo_ddr_bridge_0_3' [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/synth/design_1_fifo_ddr_bridge_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ddr_bridge' [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ddr_bridge_v1_0_M00_AXI' [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:3]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ddr_bridge_v1_0_M00_AXI' (0#1) [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge_master_full_v1_0_M00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ddr_bridge' (0#1) [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ipshared/4023/hdl/fifo_ddr_bridge.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fifo_ddr_bridge_0_3' (0#1) [c:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.gen/sources_1/bd/design_1/ip/design_1_fifo_ddr_bridge_0_3/synth/design_1_fifo_ddr_bridge_0_3.v:53]
 WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BRESP[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BUSER[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
@@ -120,48 +120,48 @@ WARNING: [Synth 8-7129] Port M_AXI_RLAST in module fifo_ddr_bridge_v1_0_M00_AXI 
 WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RVALID in module fifo_ddr_bridge_v1_0_M00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.520 ; gain = 604.293
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.992 ; gain = 603.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.520 ; gain = 604.293
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.992 ; gain = 603.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.520 ; gain = 604.293
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.992 ; gain = 603.812
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1330.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1329.992 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1408.523 ; gain = 1.895
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1411.508 ; gain = 2.297
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1411.508 ; gain = 685.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1411.508 ; gain = 685.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1411.508 ; gain = 685.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1408.523 ; gain = 682.297
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1411.508 ; gain = 685.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -170,10 +170,8 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   32 Bit       Adders := 1     
 	   2 Input   17 Bit       Adders := 1     
-	   2 Input    7 Bit       Adders := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
 	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input    1 Bit        Muxes := 3     
@@ -320,25 +318,25 @@ WARNING: [Synth 8-7129] Port m00_axi_rdata[44] in module design_1_fifo_ddr_bridg
 WARNING: [Synth 8-7129] Port m00_axi_rdata[43] in module design_1_fifo_ddr_bridge_0_3 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1408.523 ; gain = 682.297
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1411.508 ; gain = 685.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1533.816 ; gain = 807.590
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1533.320 ; gain = 807.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.039 ; gain = 807.812
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1533.473 ; gain = 807.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1553.129 ; gain = 826.902
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1552.590 ; gain = 826.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -356,37 +354,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -402,41 +400,41 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |CARRY4 |    11|
+|1     |CARRY4 |    19|
 |2     |LUT1   |     4|
 |3     |LUT2   |     3|
-|4     |LUT3   |     4|
-|5     |LUT4   |     2|
+|4     |LUT3   |     2|
+|5     |LUT4   |     1|
 |6     |LUT5   |     2|
-|7     |LUT6   |     7|
-|8     |FDRE   |   106|
+|7     |LUT6   |     5|
+|8     |FDRE   |   112|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 75 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1778.602 ; gain = 974.371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1778.602 ; gain = 1052.375
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1778.531 ; gain = 970.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1778.531 ; gain = 1052.352
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1779.066 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1778.531 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1782.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1778.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 865333e3
+Synth Design complete | Checksum: 37108992
 INFO: [Common 17-83] Releasing license: Synthesis
 124 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1782.738 ; gain = 1280.129
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1782.738 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fifo_ddr_bridge_0_3, cache-ID = b7c04f9b510aaf84
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1778.531 ; gain = 1276.262
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1778.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fifo_ddr_bridge_0_3, cache-ID = 052968ae7362dc9a
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1782.738 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1778.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_fifo_ddr_bridge_0_3_utilization_synth.rpt -pb design_1_fifo_ddr_bridge_0_3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 14:54:14 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 26 10:52:19 2025...

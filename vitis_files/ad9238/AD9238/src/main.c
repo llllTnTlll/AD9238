@@ -6,106 +6,78 @@
 #include "sleep.h"
 #include <stdint.h>
 
+// 状态机
+typedef enum{
+    PS_WAIT,
+    PS_DECODE
+} PS_States;
+
+static PS_States State = PS_WAIT;
+
+
+// 中断
 #define IRQ_F2P_INDEX   0
 #define FABRIC_IRQ_ID   (61 + IRQ_F2P_INDEX)
 
-#define PL_BUF_ADDR  0x1000000u
-#define CACHELINE    32u
+static XScuGic Intc;
 
-static inline uint32_t round_up(uint32_t x, uint32_t a) { return (x + a - 1) & ~(a - 1); }
-
-static void InvalidateFor(void *addr, uint32_t raw_len)
-{
-    uintptr_t a     = (uintptr_t)addr;
-    uintptr_t start = a & ~(CACHELINE - 1);
-    uintptr_t end   = round_up((uint32_t)(a + raw_len), CACHELINE);
-    Xil_DCacheInvalidateRange(start, end - start);
-    asm volatile("dsb sy" ::: "memory");
+void MyDeviceIsr(void *CallbackRef)
+{   
+    (void)CallbackRef;
+    xil_printf("[ISR] edge irq on ID=%d\r\n", FABRIC_IRQ_ID);
+    State = PS_DECODE;
 }
 
-static void PsDecode(int N)
+// 解码
+#define PL_BUF_ADDR  0x1000000u
+
+void ReadDdrAs16(uint32_t N)
 {
-    volatile uint64_t *buf64 = (volatile uint64_t *)PL_BUF_ADDR;
+    Xil_DCacheInvalidateRange(PL_BUF_ADDR, N * sizeof(uint16_t));
 
-    InvalidateFor((void*)PL_BUF_ADDR, (uint32_t)N * sizeof(uint64_t));
+    volatile uint16_t *p16 = (volatile uint16_t *)PL_BUF_ADDR;
 
-    for (int i = 0; i < N; ++i) {
-        uint64_t v  = buf64[i];
-        uint32_t lo = (uint32_t)(v & 0xFFFFFFFFu);
-        uint32_t hi = (uint32_t)(v >> 32);
-        xil_printf("[%3d] 0x%08lx_%08lx\r\n", i,
-                   (unsigned long)hi, (unsigned long)lo);
+    const float V_LSB = 10.0f / 4096.0f;  
+
+    for (uint32_t i = 0; i < N; i++) 
+    {
+        uint16_t v = p16[i];
+        float Vin = (v - 2048) * V_LSB;
+        int32_t mv = (int32_t)(Vin * 1000.0f);  
+        xil_printf("[%3d] %d mV\r\n", i, mv);
     }
 }
 
-
-static XScuGic Intc;
-
-typedef enum {
-    PS_WAIT,
-    PS_DECODE,
-    PS_DONE
-} PS_State;
-
-static volatile PS_State state = PS_WAIT;
-
-static void FabricIsr(void *Ref)
-{
-    (void)Ref;
-    xil_printf("[ISR] edge irq on ID=%d\r\n", FABRIC_IRQ_ID);
-    state = PS_DECODE;
-}
-
-static int GicSetupAndConnect(u16 IntId,
-                              Xil_InterruptHandler Handler,
-                              void *Ref)
-{
-    XScuGic_Config *Cfg = XScuGic_LookupConfig(XPAR_INTC_BASEADDR);
-    if (!Cfg) return XST_FAILURE;
-
-    int st = XScuGic_CfgInitialize(&Intc, Cfg, Cfg->CpuBaseAddress);
-    if (st != XST_SUCCESS) return st;
-
-    // 配置上升沿触发（优先级0xA0，仅示例）
-    XScuGic_SetPriorityTriggerType(&Intc, IntId, 0xA0, 0x3);
-
-    st = XScuGic_Connect(&Intc, IntId, Handler, Ref);
-    if (st != XST_SUCCESS) return st;
-
-    XScuGic_Enable(&Intc, IntId);
-
-    Xil_ExceptionInit();
-    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
-                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
-                                 &Intc);
-    Xil_ExceptionEnable();
-    return XST_SUCCESS;
-}
+// 串口
 
 
 int main(void)
 {
-    int st = GicSetupAndConnect(FABRIC_IRQ_ID, FabricIsr, NULL);
-    if (st != XST_SUCCESS) {
-        xil_printf("GIC setup failed: %d\r\n", st);
-        return st;
+    XScuGic_Config *Cfg = XScuGic_LookupConfig(XPAR_INTC_BASEADDR);
+    int status = XScuGic_CfgInitialize(&Intc,Cfg,Cfg->CpuBaseAddress);
+    if(status != XST_SUCCESS)
+    {
+        xil_printf("Initial Gic Failed!");
     }
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, &Intc);
+    Xil_ExceptionEnable();
 
-    xil_printf("Waiting for data\r\n");
-    state = PS_WAIT;
+    XScuGic_Connect(&Intc,
+                FABRIC_IRQ_ID,
+                (Xil_ExceptionHandler)MyDeviceIsr,
+                (void *)NULL);
 
-    while (1) {
-        switch (state) {
-        case PS_WAIT:
-            break;
-        case PS_DECODE:
-            PsDecode(100);
-            state = PS_DONE;
-            break;
-        case PS_DONE:
-            break;
+    XScuGic_SetPriorityTriggerType(&Intc, FABRIC_IRQ_ID, 0xA0, 0x3);
+    XScuGic_Enable(&Intc, FABRIC_IRQ_ID);
+
+    while (1)
+    {
+        if(State == PS_DECODE)
+        {
+            ReadDdrAs16(400);
+            State = PS_WAIT;
         }
-
         usleep(1000);
     }
 }

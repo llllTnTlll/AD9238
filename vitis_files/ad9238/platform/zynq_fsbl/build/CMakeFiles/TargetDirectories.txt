@@ -1,3 +1,0 @@
-C:/Users/liuzh/Desktop/high_speed_adc/vitis_prjs/ad9238/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
-C:/Users/liuzh/Desktop/high_speed_adc/vitis_prjs/ad9238/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
-C:/Users/liuzh/Desktop/high_speed_adc/vitis_prjs/ad9238/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

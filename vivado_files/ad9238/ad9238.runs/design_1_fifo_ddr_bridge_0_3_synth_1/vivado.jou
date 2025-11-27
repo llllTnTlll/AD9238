@@ -3,12 +3,12 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Oct 30 14:53:33 2025
-# Process ID         : 22072
-# Current directory  : C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1
+# Start of session at: Wed Nov 26 10:51:48 2025
+# Process ID         : 29244
+# Current directory  : C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1
 # Command line       : vivado.exe -log design_1_fifo_ddr_bridge_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fifo_ddr_bridge_0_3.tcl
-# Log file           : C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.vds
-# Journal file       : C:/Users/liuzh/Desktop/high_speed_adc/fpga_prjs/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1\vivado.jou
+# Log file           : C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1/design_1_fifo_ddr_bridge_0_3.vds
+# Journal file       : C:/Users/liuzh/Desktop/AD9238/vivado_files/ad9238/ad9238.runs/design_1_fifo_ddr_bridge_0_3_synth_1\vivado.jou
 # Running On         : OMEN
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
@@ -17,8 +17,8 @@
 # CPU Physical cores : 16
 # CPU Logical cores  : 24
 # Host memory        : 16831 MB
-# Swap memory        : 18253 MB
-# Total Virtual      : 35084 MB
-# Available Virtual  : 12424 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 36158 MB
+# Available Virtual  : 19467 MB
 #-----------------------------------------------------------
 source design_1_fifo_ddr_bridge_0_3.tcl -notrace
